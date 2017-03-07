@@ -9,22 +9,20 @@ auth = tweepy.OAuthHandler(twitter_credentials.consumer_key, twitter_credentials
 auth.set_access_token(twitter_credentials.access_key, twitter_credentials.access_secret)
 api = tweepy.API(auth)
 
-#we are trying to get 50 tweets and store them into an excel file in which a sheet is named adobe
+#we are trying to get 150 tweets and store them into an excel file in which a sheet is named Tweets
 
 tweet_limit=150
 wb=xlsxwriter.Workbook('tweetsentiment.xlsx')
 # We create a workbook named tweetsentiment.xlsx to store the tweets and the corresponding sentiment scores
 ws=wb.add_worksheet('Tweets')
 
-# an empty array in whhich the tweets will load - for #framemaker or the word framemaker
+# an empty array in whhich the tweets will load
 Tweet=[]
 Tweet = tweepy.Cursor(api.search, q='ISRO', lang='en').items(tweet_limit)
 #print(adobeTweet.text)
 
 # sentiment is a variable that stores the average sentiment of all the tweets
 
-#www.nltk.org/_modules/nltk/sentiment/vader.html
-#If you use the VADER sentiment analysis tools
 sentiment=0
 analyzer=SentimentIntensityAnalyzer()
 
