@@ -1,0 +1,5 @@
+consumer_key="X2CUforSOydcKSjldWL9ECYIi"
+consumer_secret="iT3UEQQfFesjuK9C2OjSgHojduZXegUp3DUaKkL9LcVAO8uc1i"
+access_key="22473191-Cuzt0oZzdYFkqYn2AZJSrSoW111CVnwERvIFU9gMu"
+access_secret="V2Yf9vDytlLWJt3PlZWtKn6EIPFuS5w7XBDQeg4lm96Vl"
+
